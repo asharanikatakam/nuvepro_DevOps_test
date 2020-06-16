@@ -1,0 +1,36 @@
+Configure Jenkins to build and run Docker image
+
+
+
+
+1. (a) Download the files package.json, server.js, Dockerfile, .dockerignore present in the project directory to your local directory
+
+
+    (b) Complete the Dockerfile to build the given NodeJS application and expose it on port 8000
+
+
+    (c) Complete the server.js to display the message as You have successfully built a docker image for NodeJS application
+
+
+    (d) Once done, upload all the above files to your gitlab repository and use the same repository as the SCM to configure the job in jenkins
+
+
+2.  In your hackerrank test, select Project -> Run to start Jenkins
+
+
+3. Click on web preview link to launch Jenkins UI and get the admin password with the command,
+
+
+         $ cat /home/user/.jenkins/secrets/initialAdminPassword
+
+
+4. Create a job named JenkinsDockerDemo in Jenkins.
+
+
+5. Configure your job to use your created repository as SCM.
+
+
+6. Add a build step to build a docker image named myimage and tag it with tag1. Also, run the image in detached mode.
+
+
+7. Build your job and check your result in console output.
